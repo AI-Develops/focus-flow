@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusFlow | AI-Develops</title>
+    <meta
+      name="description"
+      content="A minimalist productivity timer for developers."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-blobs"></div>
+
+    <main class="container">
+      <header>
+        <div class="logo">
+          <!-- Heroicon: chip -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              d="M11.25 4.533A9.707 9.707 0 006 3.057c-5.056 0-9.274 3.778-9.92 8.667-.04.3-.064.604-.071.91-.122 5.068 3.655 9.366 8.541 9.943a9.832 9.832 0 004.88-1.077c1.77.923 3.824 1.343 5.923 1.137 4.544-.446 8.24-3.95 8.922-8.397.035-.227.06-.456.075-.688.196-3.08-1.026-5.88-3.097-7.854a9.756 9.756 0 00-3.155-2.071c-1.927-.812-4.073-1.066-6.147-.735z"
+              opacity="0.2"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.765-1.272 5.219 0 1.923 1.684 2.628 4.347 1.83 6.841a.75.75 0 01-1.428-.457.617.617 0 01.002-.007 6.002 6.002 0 00-1.38-5.248z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <h1>FocusFlow</h1>
+        </div>
+        <p class="subtitle">Stay in the zone.</p>
+      </header>
+
+      <div class="timer-card">
+        <div class="timer-display" id="time-display">25:00</div>
+        <div class="status-indicator" id="status-text">Ready to focus?</div>
+
+        <div class="controls">
+          <button id="start-btn" class="btn btn-primary" aria-label="Start Timer">
+            <!-- Heroicon: play -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="btn-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Start
+          </button>
+
+          <button
+            id="pause-btn"
+            class="btn btn-secondary"
+            aria-label="Pause Timer"
+            disabled
+          >
+            <!-- Heroicon: pause -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="btn-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Pause
+          </button>
+
+          <button id="reset-btn" class="btn btn-ghost" aria-label="Reset Timer">
+            <!-- Heroicon: arrow-path -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="btn-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.755 10.059a7.5 7.5 0 0112.548-3.364l1.903 1.903h-3.183a.75.75 0 100 1.5h4.992a.75.75 0 00.75-.75V4.356a.75.75 0 00-1.5 0v3.18l-1.9-1.9A9 9 0 003.306 9.67a.75.75 0 101.45.388zm15.408 3.352a.75.75 0 00-.919.53 7.5 7.5 0 01-12.548 3.364l-1.902-1.903h3.183a.75.75 0 000-1.5H2.984a.75.75 0 00-.75.75v4.992a.75.75 0 001.5 0v-3.18l1.9 1.9a9 9 0 0015.059-4.035.75.75 0 00-.53-.918z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
